@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Audio Intro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <audio src="http://www.violinonline.com/sound/E-0.mp3" id="playE">
+</audio>
+
+<audio src="http://www.violinonline.com/sound/A-0.mp3" id="playA">
+</audio>
+
+<audio src="http://www.violinonline.com/sound/D-0.mp3" id="playD">
+</audio>
+
+<audio src="http://www.violinonline.com/sound/G-0.mp3" id="playG">
+</audio>
+<h1>Play E</h1>
+<div>
+ <button class="ePlayer" onclick="document.getElementById('playE').play()">Play E</button>
+ <button class="ePlayer" onclick="document.getElementById('playE').pause()">Pause the Audio</button>
+ <button class="ePlayer" onclick="document.getElementById('playE').volume+=0.1">Increase Volume</button>
+ <button class="ePlayer" onclick="document.getElementById('playE').volume-=0.1">Decrease Volume</button>
+</div>
+<h1>Play A</h1>
+<div>
+ <button class="aPlayer" onclick="document.getElementById('playA').play()">Play A</button>
+ <button class="aPlayer" onclick="document.getElementById('playA').pause()">Pause the Audio</button>
+ <button class="aPlayer" onclick="document.getElementById('playA').volume+=0.1">Increase Volume</button>
+ <button class="aPlayer" onclick="document.getElementById('playA').volume-=0.1">Decrease Volume</button>
+</div>
+<h1>Play D</h1>
+<div>
+ <button class="dPlayer" onclick="document.getElementById('playD').play()">Play D</button>
+ <button class="dPlayer" onclick="document.getElementById('playD').pause()">Pause the Audio</button>
+ <button class="dPlayer" onclick="document.getElementById('playD').volume+=0.1">Increase Volume</button>
+ <button class="dPlayer" onclick="document.getElementById('playD').volume-=0.1">Decrease Volume</button>
+</div>
+<h1>Play G</h1>
+<div>
+ <button class="gPlayer" onclick="document.getElementById('playG').play()">Play G</button>
+ <button class="gPlayer" onclick="document.getElementById('playG').pause()">Pause the Audio</button>
+ <button class="gPlayer" onclick="document.getElementById('playG').volume+=0.1">Increase Volume</button>
+ <button class="gPlayer" onclick="document.getElementById('playG').volume-=0.1">Decrease Volume</button>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
